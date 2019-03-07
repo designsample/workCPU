@@ -1,0 +1,72 @@
+@charset "UTF-8";
+*{
+	font-size: 16px;
+	font-family: "WenQuanYi Zen Hei", "文泉驛正黑", "Heiti TC", "黑體-繁", "LiHei Pro", "儷黑 Pro", "PingFang TC", "Droid Sans Fallback", "Roboto", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+
+@media screen and (max-width: 767px) {
+.navbar-default{
+	border: 0;
+	background-color: #111F72;
+}
+a.navbar-brand h1 img.visible-xs{
+	padding: 12px 0 12px 15px;
+}
+.navbar-default .navbar-toggle>span.icon-bar{
+	color: #ffffff;
+	background-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #191e48;
+}
+ul.navbar-nav.visible-xs>li>a{
+	
+	color: #ffffff;
+}
+ul.navbar-nav.visible-xs>li>a:hover,
+ul.navbar-nav.visible-xs>li>a:focus{
+	background: #ffffff;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+.navbar-default{
+	border: 0;
+	background-color: transparent;
+}
+.indexTop{
+background: #00e1d1,url(../img/index-bg.png); /* Old browsers */
+background: -moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #00e1d1 0%,#00c4e1 100%); /* Chrome10-25,Safari5.1-6 */
+background: top center url(../img/index-bg.png),linear-gradient(to right, #00e1d1 0%,#00c4e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1d1', endColorstr='#00c4e1',GradientType=1 ); /* IE6-9 */
+} 
+.indexTop-sec{
+	margin-top: 155px;
+background: #00e1d1; /* Old browsers */
+background: -moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #00e1d1 0%,#00c4e1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #00e1d1 0%,#00c4e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1d1', endColorstr='#00c4e1',GradientType=1 ); /* IE6-9 */
+} 
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+
+@media screen and (max-width: 380px) {}
+
+
+.m-0{
+	margin: 0;
+}
+.p-0{
+	padding: 0;
+}
