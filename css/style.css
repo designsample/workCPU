@@ -1,63 +1,149 @@
 @charset "UTF-8";
+
 /*For All*/
-*{
+* {
     font-size: 16px;
     font-family: "WenQuanYi Zen Hei", "文泉驛正黑", "Heiti TC", "黑體-繁", "LiHei Pro", "儷黑 Pro", "PingFang TC", "Droid Sans Fallback", "Roboto", "Microsoft JhengHei", "微軟正黑體", sans-serif;
 }
+a{
+    color:#111F72;
+    }
+a:hover, a:focus {
+    color: #191e48;
+}
+footer.navbar{
+    margin-bottom: 0;
+}
+footer .divider{
+        background: #00e1d1;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #00e1d1 0%, #00c4e1 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e1d1', endColorstr='#00c4e1', GradientType=1);
+        /* IE6-9 */
+            border-top: 0;
+            height:1px;
+            margin-left: -5px;
+            margin-right: -5px;
+            position: relative;
+            top: -50px;
+            z-index: -9;
+            margin: 0;
+    }
+/*裝飾圖片*/
+.indexTop-thr img[class*="indexP"]{
+    position: absolute;
+}
 
 @media screen and (max-width: 767px) {
-.navbar-default{
-    border: 0;
-    background-color: #111F72;
-}
-a.navbar-brand h1 img.visible-xs{
-    padding: 12px 0 12px 15px;
-}
-.navbar-default .navbar-toggle>span.icon-bar{
-    color: #ffffff;
-    background-color: #ffffff;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #191e48;
-}
-ul.navbar-nav.visible-xs>li>a{
-    
-    color: #ffffff;
-}
-ul.navbar-nav.visible-xs>li>a:hover,
-ul.navbar-nav.visible-xs>li>a:focus{
-    background: #ffffff;
-}
+    .navbar-default {
+        border: 0;
+        background-color: #111F72;
+    }
+
+    a.navbar-brand h1 img.visible-xs {
+        padding: 12px 0 12px 15px;
+    }
+    .indexTop .navbar-default{
+        margin-bottom: 0;
+    }
+    .navbar-default .navbar-toggle>span.icon-bar {
+        color: #ffffff;
+        background-color: #ffffff;
+    }
+
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #191e48;
+    }
+
+    ul.navbar-nav.visible-xs>li>a {
+
+        color: #ffffff;
+    }
+
+    ul.navbar-nav.visible-xs>li>a:hover,
+    ul.navbar-nav.visible-xs>li>a:focus {
+        background: #ffffff;
+    }
+    .indexTop-thr{
+        padding-top: 136px;
+        background: bottom 60px center url(../img/index-bg-xs.png) no-repeat,#00e1d1;
+        background: bottom 60px center url(../img/index-bg-xs.png) no-repeat,-moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        background: bottom 60px center url(../img/index-bg-xs.png) no-repeat,-webkit-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        background: bottom 60px center url(../img/index-bg-xs.png) no-repeat,linear-gradient(to right, #00e1d1 0%, #00c4e1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e1d1', endColorstr='#00c4e1', GradientType=1);
+        /* IE6-9 */
+        background-size: cover;
+    }
+    footer.navbar{
+        padding-top: 60px;
+        background: top center url('../img/footer.png') no-repeat;
+    }
+    footer .divider{
+        top: -36px;
+    }
 
 }
 
 @media screen and (min-width: 768px) {
-.navbar-default{
-    border: 0;
-    background-color: transparent;
-}
-.indexTop{
-background: #00e1d1,url(../img/index-bg.png); /* Old browsers */
-background: -moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #00e1d1 0%,#00c4e1 100%); /* Chrome10-25,Safari5.1-6 */
-background: top center url(../img/index-bg.png),linear-gradient(to right, #00e1d1 0%,#00c4e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1d1', endColorstr='#00c4e1',GradientType=1 ); /* IE6-9 */
-} 
-.indexTop-sec{
-    margin-top: 155px;
-background: #00e1d1; /* Old browsers */
-background: -moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #00e1d1 0%,#00c4e1 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #00e1d1 0%,#00c4e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1d1', endColorstr='#00c4e1',GradientType=1 ); /* IE6-9 */
-} 
+    .navbar-default {
+        border: 0;
+        background-color: transparent;
+    }
+
+    .indexTop {
+        background: url(../img/index-p4-xl.png),url(../img/index-bg.png);
+        background-repeat: no-repeat,repeat-x;
+        background-position: left calc(50vw - 480px) top 92px,top center;/*245px*/
+    }
+
+    .indexTop-sec {
+        margin-top: 155px;
+
+    }
+
+    .indexTop-thr {
+        background: #00e1d1;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #00e1d1 0%, #00c4e1 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e1d1', endColorstr='#00c4e1', GradientType=1);
+        /* IE6-9 */
+    }
+    footer.navbar{
+        padding-top: 106px;
+        background: top center url('../img/footer-xl.png') no-repeat;
+    }
+    
 }
 
 @media screen and (min-width: 992px) {
+    
 
 }
 
 @media screen and (min-width: 1200px) {
+    .indexP1{
+    left: 76vw;
+    top: 50px;
+}
+.indexP2{
+    left: calc(16.6vw - 180px);
+    top: 140px;
+}
+.indexP3{
+    left: 88.5vw;
+    top: 0;
+}
 
 }
 
@@ -121,14 +207,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1d1', end
 }
 
 
-.bg-1{
+.bg-1 {
     background: #fcd68c;
 }
 
 
 
-.color-2{
-    color:#d04a2a;
+.color-2 {
+    color: #d04a2a;
 }
 
 a.color-1 {
@@ -152,6 +238,33 @@ a.color-2:active {
     color: #000;
 }
 
+/*【元件】樣式*/
+.btn-indexNav {
+    background-color: transparent;
+    border-color: transparent;
+    border: 0;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px rgba(0, 164, 225, 1);
+    text-shadow: 4px 4px 4px rgba(0, 164, 225, 0.50);
+}
+
+.btn-indexNav:hover,
+.btn-indexNav:focus,
+.btn-indexNav.focus {
+    color: #111F72
+}
+
+.btn-blue{
+    background-color:#111F72;
+    color: #FFFFFF;
+}
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue.focus{
+    background-color:#111F72;
+    color: #00e1d1;
+}
 /*[設定]功能----------*/
 
 .inline-block {
@@ -240,10 +353,12 @@ a.color-2:active {
 .m-10 {
     margin: 10px !important;
 }
+
 .mv-10 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .mv-20 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -258,6 +373,7 @@ a.color-2:active {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .mh-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -267,6 +383,7 @@ a.color-2:active {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .mr-10 {
     margin-right: 10px;
 }
@@ -295,8 +412,6 @@ a.color-2:active {
     margin-bottom: 40px;
 }
 
-
-
 .bb {
     border-bottom: 1px solid #fff;
 }
@@ -309,8 +424,194 @@ a.color-2:active {
     text-decoration: none;
 }
 
-
 .width-full {
     width: 100%;
 }
 
+/*表格*/
+.border-table .tr .td{
+    border-bottom:1px solid #fff; 
+}
+
+/*表格*/
+
+.table {
+    background: #fff;
+    overflow: hidden;
+    color: #4a4a4a;
+}
+
+.table tr:nth-of-type(even) {
+    background: #F5F6F7;
+}
+
+.table th,
+.table td {
+    margin: 15px 5px;
+}
+
+
+
+/*div table*/
+/*預設寬100%*/
+.divtable {
+    display: table;
+    width: 100%;
+}
+
+.divtable .thead {
+    display: table-header-group;
+}
+
+.divtable .tbody {
+    display: table-row-group;
+}
+
+.divtable .tfooter {
+    display: table-footer-group;
+}
+
+.divtable .tr {
+    display: table-row;
+}
+/*預設邊距*/
+.divtable .th,
+.divtable .td {
+    display: table-cell;
+    padding: 10px 5px;
+    vertical-align: middle;
+}
+.divtable .td:first-child{
+    min-width:4em;
+}
+/*表格標題，只能在table標籤下有一個，建議用title取代*/
+.divtable .caption{
+    display: table-caption;
+    text-align: center;
+}
+.divtable .col{
+    display: table-column;
+}
+/*選取幾欄*/
+.divtable .colgroup{
+    display: table-column-group;
+}
+.divtable .tr{
+    border-bottom: 1px solid #fcd68c;
+}
+
+
+
+/*RWD表格*/
+
+.rwd-divtable>.tr.header, .rwd-divtable>.tr.footer{
+    background: #fcd68c;
+}
+/*RWD DIV表格*/
+/*RWD DIVtable*/
+.rwd-divtable {
+    min-width: 100%;
+    background: #fff;
+    overflow: hidden;
+    color: #4a4a4a;
+}
+/*th字體加粗*/
+.rwd-divtable .tr:first-child>.th {
+    font-weight: bold;
+}
+/*表格偶數行，只要是tr(不管內部包含th/td)的偶數都會加底色*/
+.rwd-divtable .tr:nth-of-type(even) {
+    background: #eeeeee;/*F5F6F7*/
+}
+
+
+.rwd-divtable {
+    display: table;
+}
+
+.rwd-divtable .thead {
+    display: table-header-group;
+}
+
+.rwd-divtable .tbody {
+    display: table-row-group;
+}
+
+.rwd-divtable .tfooter {
+    display: table-footer-group;
+}
+
+.rwd-divtable .tr {
+    display: table-row;
+}
+
+.rwd-divtable .th,
+.rwd-divtable .td {
+    display: table-cell;
+    text-align: left;
+    padding: 15px 5px;
+}
+/*表格標題，只能在table標籤下有一個，建議用title取代*/
+.rwd-divtable .caption{
+    display: table-caption;
+    text-align: center;
+}
+.rwd-divtable .col{
+    display: table-column;
+}
+/*選取幾欄*/
+.rwd-divtable .colgroup{
+    display: table-column-group;
+}
+/*會先吃到這個設定讓表頭消失，但尺寸992px以下會再吃到display:block屬性*/
+.rwd-divtable .th {
+    display: none;
+}
+
+.rwd-divtable .td {
+    display: block;
+}
+
+.rwd-divtable .td:before {
+    content: attr(data-th) " : ";
+    font-weight: bold;
+    width: 7em;
+    display: inline-block;
+}
+.rwd-divtable .th,
+.rwd-divtable .td:before {
+    color: #4A4A4A;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .rwd-divtable .td:before {
+        display: none;
+    }
+    .rwd-divtable .th,
+    .rwd-divtable .td {
+        display: table-cell;
+        padding: 10px 5px;
+    }
+    .rwd-divtable .th:first-child,
+    .rwd-divtable .td:first-child {
+        padding-left: 10px;
+    }
+    .rwd-divtable .th:last-child,
+    .rwd-divtable .td:last-child {
+        padding-right: 10px;
+    }
+    .rwd-divtable .th,
+    .rwd-divtable .td {
+        padding: 10px 10px !important;
+    }
+    .rwd-divtable .th,
+    .rwd-divtable .td:before {
+        color: #4a4a4a;
+        font-weight: normal;
+    }
+}
+
+.rwd-divtable tr>th>a.glyphicon {
+    text-decoration: none;
+}
