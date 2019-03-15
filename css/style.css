@@ -39,6 +39,7 @@ footer .divider{
     position: absolute;
 }
 
+
 @media screen and (max-width: 767px) {
     .navbar-default {
         border: 0;

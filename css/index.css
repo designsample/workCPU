@@ -1,1 +1,364 @@
 @charset "UTF-8";
+
+.input-group {}
+
+/*上方頁籤*/
+.indexTop-tabs {}
+
+.indexTop-tabs .nav li {
+    padding: 10px 5px;
+    height: 54px;
+}
+
+.indexTitle .nav li {
+    padding: 0px 5px;
+    height: 34px;
+}
+
+.indexTop-tabs .nav a,
+.indexTitle .nav a {
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4A4A4A;
+    line-height: 34px;
+}
+
+.indexTop-tabs .nav-pills>li.active>a,
+.indexTop-tabs .nav-pills>li.active>a:hover,
+.indexTop-tabs .nav-pills>li.active>a:focus,
+.indexTitle .nav-pills>li.active>a,
+.indexTitle .nav-pills>li.active>a:hover,
+.indexTitle .nav-pills>li.active>a:focus {
+    padding: 0;
+    font-size: 24px;
+    color: #111F72;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-animation: scale-up-bottom 0.1s ease-in both;
+    /*動畫 從下長大*/
+    animation: scale-up-bottom 0.1s ease-in both;
+}
+/*圖們*/
+
+
+.indexTop-tabs .nav li:first-child {
+    padding: 10px 5px 10px 0;
+}
+
+.indexTitle .nav li:first-child {
+    padding: 0 5px 0 0;
+}
+
+.indexTop-tabs .divider,
+.indexTitle .divider {
+    font-size: 24px;
+    padding: 10px 0;
+    color: #4A4A4A;
+}
+
+/*上方複合式搜尋*/
+.indexTop-searchGroup .input-group>input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.indexTop-searchGroup .input-group .input-group-btn select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    border-radius: 0;
+    height: 35px;
+    background: transparent;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border: 1px solid #cccccc;
+    background: #eeeeee;
+    background-image: url("../img/ic-triangle.png");
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+.indexTop-searchGroup div>button {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 0;
+    top: -1px;
+    height: 35px;
+}
+/*首頁 詳細搜尋 複合式選取框*/
+.indexTop-searchGroupFine select.btn{
+    height: 35px;
+    padding: 6px 12px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    border-radius: 0;
+    height: 35px;
+    background: transparent;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border: 1px solid #cccccc;
+    background: #eeeeee;
+    background-image: url(../img/ic-triangle.png);
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+.indexTop-searchGroupFine .input-group input{
+border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.indexTop-searchGroupFine .input-group select.btn:last-child{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.indexTop-searchGroupFine .input-group button.btn:last-child{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/*標題*/
+.indexTitle {
+    width: 100%;
+    height: 48px;
+    background: left bottom url(../img/indexTitle-bottom.png) no-repeat;
+    text-align: left;
+}
+
+.indexTitle p {
+    font-size: 24px;
+    color: #4A4A4A;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.indexTop-searchGroupFine .title{
+	font-size: 20px;
+	font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+    .indexTop-tabs .nav li:first-child {
+        padding: 10px 5px;
+        height: 54px;
+    }
+
+    .section.indexContent>.container>.row.book>div {
+        display: inline-block;
+        text-align: center;
+        height: 60vw;
+
+    }
+
+    .section.indexContent>.container>.row.book>div .thumbnail {
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        height: 58vw;
+        margin-bottom: 0;
+    }
+
+    .section.indexContent>.container>.row.book>div .thumbnail img {
+        width: 102%;
+        height: auto;
+        margin-top: -10px;
+        display: block;
+    }
+
+    .section.indexContent>.container>.row.book>div .caption {
+        display: none;
+    }
+    .row.column>div{
+    	margin: 20px 0;
+    }
+    .indexTable>.tr:nth-child(odd){
+    	background: #eeeeee;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .section.indexContent .indexBg {
+        width: 100%;
+        height: 130px;
+        z-index: -9;
+        position: absolute;
+        background: #00e1d1;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #00e1d1 0%, #00c4e1 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e1d1', endColorstr='#00c4e1', GradientType=1);
+        /* IE6-9 */
+    }
+
+    .section.indexContent>.container>.row.book,
+    .section.indexContent>.container>.row.column>div {
+        background: rgba(255, 255, 255, 0.80);
+        box-shadow: 2px 2px 4px 0 rgba(17, 31, 114, 0.50);
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .section.indexContent>.container>.row.book>div {
+        display: inline-block;
+        text-align: center;
+        height: 210px;
+
+    }
+
+    .section.indexContent>.container>.row.book>div .thumbnail {
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 0;
+    }
+
+    .section.indexContent>.container>.row.book>div .thumbnail img {
+        width: 110%;
+        height: auto;
+        margin-top: 0;
+        display: block;
+    }
+
+    .section.indexContent>.container>.row.book>div .caption {
+        display: none;
+    }
+
+    /*下面的二分割*/
+    .section.indexContent>.container>.row.column>div:first-child {
+        width: calc(50% - 5px);
+        margin-right: 5px;
+    }
+
+    .section.indexContent>.container>.row.column>div:last-child {
+        width: calc(50% - 5px);
+        margin-left: 5px;
+    }
+    /*表格*/
+    .rwd-divtable.indexTable{
+	
+}
+.rwd-divtable.indexTable div.tr>.th:last-child,
+.rwd-divtable.indexTable div.tr>.td:last-child{
+        width: 7em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section.indexContent>.container>.row.book>div {
+        display: inline-block;
+        text-align: center;
+        height: 376px;
+
+    }
+
+    .section.indexContent>.container>.row.book>div .thumbnail {
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        height: 270px;
+        margin-bottom: 0;
+    }
+
+    .section.indexContent>.container>.row.book>div .thumbnail img {
+        width: 102%;
+        height: auto;
+        margin-top: -10px;
+        display: block;
+    }
+
+    .section.indexContent>.container>.row.book>div .caption {
+        display: block;
+    }
+
+    .section.indexContent>.container>.row.book>div .caption>a:first-child {
+        height: 44px;
+        margin-bottom: 6px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .centerItem-1 {
+        margin-left: 187px;
+    }
+
+    .section.indexContent>.container>.row.book>div {
+        display: inline-block;
+        text-align: center;
+        height: 316px;
+
+    }
+
+    .section.indexContent>.container>.row.book>div .thumbnail {
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        height: 220px;
+        margin-bottom: 0;
+    }
+
+    .section.indexContent>.container>.row.book>div .thumbnail img {
+        width: 102%;
+        height: auto;
+        margin-top: -10px;
+        display: block;
+    }
+
+    .section.indexContent>.container>.row.book>div .caption>a:first-child {
+        height: 44px;
+        margin-bottom: 6px;
+        display: block;
+    }
+}
+@media screen and (max-width: 380px) {}
+/*表格*/
+.rwd-divtable.indexTable>.tr.header, .rwd-divtable.indexTable>.tr.footer {
+    background: transparent;
+}
+.rwd-divtable.indexTable .tr:nth-of-type(even) {
+    background: transparent;
+}
+
+
+
+/*動畫*/
+@-webkit-keyframes scale-up-bottom {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        -webkit-transform: scale(1.06);
+        transform: scale(1.06);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+}
+
+@keyframes scale-up-bottom {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        -webkit-transform: scale(1.06);
+        transform: scale(1.06);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+}
