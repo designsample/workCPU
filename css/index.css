@@ -37,14 +37,7 @@
     background-color: transparent;
 }
 
-.nav>li>a:hover,
-.nav>li>a:focus {
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-animation: scale-up-bottom 0.1s ease-in both;
-    /*動畫 從下長大*/
-    animation: scale-up-bottom 0.1s ease-in both;
-}
+
 /*圖們*/
 
 
@@ -140,10 +133,30 @@ border-top-left-radius: 4px;
 	font-size: 20px;
 	font-weight: bold;
 }
+/*圖片*/
+.section.indexContent .indexBg {
+        width: 100%;
+        height: 130px;
+        z-index: -9;
+        position: absolute;
+        background: #00e1d1;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #00e1d1 0%, #00c4e1 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e1d1', endColorstr='#00c4e1', GradientType=1);
+        /* IE6-9 */
+    }
 @media screen and (max-width: 767px) {
     .indexTop-tabs .nav li:first-child {
         padding: 10px 5px;
         height: 54px;
+    }
+    .section.indexContent .indexBg {
+        height: 30px;
     }
 
     .section.indexContent>.container>.row.book>div {
@@ -177,25 +190,20 @@ border-top-left-radius: 4px;
     .indexTable>.tr:nth-child(odd){
     	background: #eeeeee;
     }
+    
 }
 
 @media screen and (min-width: 768px) {
-
+	.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-animation: scale-up-bottom 0.1s ease-in both;
+    /*動畫 從下長大*/
+    animation: scale-up-bottom 0.1s ease-in both;
+}
     .section.indexContent .indexBg {
-        width: 100%;
         height: 130px;
-        z-index: -9;
-        position: absolute;
-        background: #00e1d1;
-        /* Old browsers */
-        background: -moz-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #00e1d1 0%, #00c4e1 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #00e1d1 0%, #00c4e1 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e1d1', endColorstr='#00c4e1', GradientType=1);
-        /* IE6-9 */
     }
 
     .section.indexContent>.container>.row.book,

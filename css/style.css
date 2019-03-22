@@ -5,11 +5,17 @@
     font-size: 16px;
     font-family: "WenQuanYi Zen Hei", "文泉驛正黑", "Heiti TC", "黑體-繁", "LiHei Pro", "儷黑 Pro", "PingFang TC", "Droid Sans Fallback", "Roboto", "Microsoft JhengHei", "微軟正黑體", sans-serif;
 }
+p{
+    margin: 0;
+}
 a{
     color:#111F72;
     }
 a:hover, a:focus {
-    color: #191e48;
+    color: #001dcc;/*#191e48*/
+}
+.defaultTop .navbar-default{
+    margin: 0;
 }
 footer.navbar{
     margin-bottom: 0;
@@ -34,12 +40,23 @@ footer .divider{
             z-index: -9;
             margin: 0;
     }
+    .breadcrumb{
+        background: none;
+        padding: 8px 0;
+        margin-bottom: 8px;
+    }
+    .breadcrumb::before{
+        content: url('../img/ic-home.png');
+        vertical-align: middle;
+    }
 /*裝飾圖片*/
 .indexTop-thr img[class*="indexP"]{
     position: absolute;
 }
 
-
+.defaultTop{
+        
+    }
 @media screen and (max-width: 767px) {
     .navbar-default {
         border: 0;
@@ -62,15 +79,20 @@ footer .divider{
         background-color: #191e48;
     }
 
-    ul.navbar-nav.visible-xs>li>a {
+    ul.navbar-nav.visible-xs>li>a,
+    .defaultTop ul.navbar-nav>li>a {
 
         color: #ffffff;
     }
 
     ul.navbar-nav.visible-xs>li>a:hover,
-    ul.navbar-nav.visible-xs>li>a:focus {
+    ul.navbar-nav.visible-xs>li>a:focus,
+    .defaultTop ul.navbar-nav>li>a:hover,
+    .defaultTop ul.navbar-nav>li>a:focus  {
         background: #ffffff;
     }
+
+
     .indexTop-thr{
         padding-top: 136px;
         background: bottom 60px center url(../img/index-bg-xs.png) no-repeat,#00e1d1;
@@ -81,12 +103,41 @@ footer .divider{
         /* IE6-9 */
         background-size: cover;
     }
+    .topBg{
+        height: 30px;
+    }
     footer.navbar{
         padding-top: 60px;
         background: top center url('../img/footer.png') no-repeat;
     }
     footer .divider{
         top: -36px;
+    }
+
+    .section.defaultContent>.container>.row.book>div {
+        display: inline-block;
+        text-align: center;
+        height: 60vw;
+
+    }
+
+    .section.defaultContent>.container>.row.book>div .thumbnail {
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        height: 58vw;
+        margin-bottom: 0;
+    }
+
+    .section.defaultContent>.container>.row.book>div .thumbnail img {
+        width: 102%;
+        height: auto;
+        margin-top: -10px;
+        display: block;
+    }
+
+    .section.defaultContent>.container>.row.book>div .caption {
+        display: none;
     }
 
 }
@@ -96,6 +147,42 @@ footer .divider{
         border: 0;
         background-color: transparent;
     }
+    
+    .defaultTop .navbar-default{
+    margin: 0;
+    height: 90px;
+
+}
+.navbar-brand {
+    z-index: 9
+}
+.navbar-brand img{
+    z-index: 8;
+}
+.defaultTop ul.nav{
+    padding: 13px;
+    z-index: 7;
+
+}
+.defaultTop .navbar-default .navbar-nav>li>a{
+    color: #4A4A4A;
+    font-size: 24px;
+    font-weight: bold;
+}
+.defaultTop .navbar-default .navbar-nav>li>a:hover,
+.defaultTop .navbar-default .navbar-nav>li>a:focus {
+    color: #111F72;
+    font-size: 24px;
+}
+.topBg{
+    width: 100%;
+        height: 480px;
+        z-index: -999;
+        position: absolute;
+        top: 0;
+        background: center top url(../img/header-default.png) repeat-x;
+}
+
 
     .indexTop {
         background: url(../img/index-p4-xl.png),url(../img/index-bg.png);
@@ -124,12 +211,97 @@ footer .divider{
         padding-top: 106px;
         background: top center url('../img/footer-xl.png') no-repeat;
     }
+
+    .section.defaultContent>.container>.row.book,
+    .section.defaultContent>.container>.row.main,
+    .section.defaultContent>.container>.row.column>div {
+        background: rgba(255, 255, 255, 0.80);
+        box-shadow: 2px 2px 4px 0 rgba(17, 31, 114, 0.50);
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .section.defaultContent>.container>.row.book>div {
+        display: inline-block;
+        text-align: center;
+        height: 210px;
+
+    }
+
+    .section.defaultContent>.container>.row.book>div .thumbnail {
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 0;
+    }
+
+    .section.defaultContent>.container>.row.book>div .thumbnail img {
+        width: 110%;
+        height: auto;
+        margin-top: 0;
+        display: block;
+    }
+
+    .section.defaultContent>.container>.row.book>div .caption {
+        display: none;
+    }
+
+    /*下面的二分割*/
+    .section.defaultContent>.container>.row.column>div:first-child {
+        width: calc(50% - 5px);
+        margin-right: 5px;
+    }
+
+    .section.defaultContent>.container>.row.column>div:last-child {
+        width: calc(50% - 5px);
+        margin-left: 5px;
+    }
+    /*表格*/
+    .rwd-divtable.indexTable{
+    
+}
+.rwd-divtable.indexTable div.tr>.th:last-child,
+.rwd-divtable.indexTable div.tr>.td:last-child{
+        width: 7em;
+    }
+
     
 }
 
 @media screen and (min-width: 992px) {
     
+.section.defaultContent>.container>.row.book>div {
+        display: inline-block;
+        text-align: center;
+        height: 376px;
 
+    }
+
+    .section.defaultContent>.container>.row.book>div .thumbnail {
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        height: 270px;
+        margin-bottom: 0;
+    }
+
+    .section.defaultContent>.container>.row.book>div .thumbnail img {
+        width: 102%;
+        height: auto;
+        margin-top: -10px;
+        display: block;
+    }
+
+    .section.defaultContent>.container>.row.book>div .caption {
+        display: block;
+    }
+
+    .section.defaultContent>.container>.row.book>div .caption>a:first-child {
+        height: 44px;
+        margin-bottom: 6px;
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -145,13 +317,45 @@ footer .divider{
     left: 88.5vw;
     top: 0;
 }
+.section.defaultContent>.container>.row.book>div {
+        display: inline-block;
+        text-align: center;
+        height: 316px;
+
+    }
+
+    .section.defaultContent>.container>.row.book>div .thumbnail {
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        height: 220px;
+        margin-bottom: 0;
+    }
+
+    .section.defaultContent>.container>.row.book>div .thumbnail img {
+        width: 102%;
+        height: auto;
+        margin-top: -10px;
+        display: block;
+    }
+
+    .section.defaultContent>.container>.row.book>div .caption>a:first-child {
+        height: 44px;
+        margin-bottom: 6px;
+        display: block;
+    }
 
 }
 
 
 @media screen and (max-width: 380px) {}
 
-
+.rwd-divtable.indexTable>.tr.header, .rwd-divtable.indexTable>.tr.footer {
+    background: transparent;
+}
+.rwd-divtable.indexTable .tr:nth-of-type(even) {
+    background: transparent;
+}
 
 /*[設定]層級----------*/
 
@@ -162,31 +366,36 @@ footer .divider{
 /*LOGO標題*/
 
 .h1 {
-    font-size: px;
+    font-size: ;
 }
 
 
 /*大標題*/
 
+h2,
 .h2 {
-    font-size: 24px !important;
+    font-size: 22px !important;
     margin: 0;
 }
 
 
 /*中標題*/
 
+h3,
 .h3 {
-    font-size: 22px !important;
+    font-size: 20px !important;
     margin: 0;
 }
-
+.h3.title,h3.title{
+    margin-bottom: 15px;
+}
 
 
 /*小標題 內文前標題*/
 
+h4,
 .h4 {
-    font-size: 20px !important;
+    font-size: 18px !important;
     margin: 0;
 }
 
@@ -257,14 +466,14 @@ a.color-2:active {
 }
 
 .btn-blue{
-    background-color:#111F72;
+    background-color:#337ab7;
     color: #FFFFFF;
 }
 .btn-blue:hover,
 .btn-blue:focus,
 .btn-blue.focus{
-    background-color:#111F72;
-    color: #00e1d1;
+    background-color:#266BB9;
+    color: #fff;
 }
 /*[設定]功能----------*/
 
@@ -520,9 +729,14 @@ a.color-2:active {
 .rwd-divtable .tr:first-child>.th {
     font-weight: bold;
 }
+.rwd-divtable .tr:first-child,
+.divtable .tr:first-child{
+    background: #ffffff;
+}
 /*表格偶數行，只要是tr(不管內部包含th/td)的偶數都會加底色*/
-.rwd-divtable .tr:nth-of-type(even) {
-    background: #eeeeee;/*F5F6F7*/
+.rwd-divtable .tr:nth-of-type(even),
+.divtable .tr:nth-of-type(even) {
+    background: #F5F6F7;
 }
 
 
@@ -615,4 +829,22 @@ a.color-2:active {
 
 .rwd-divtable tr>th>a.glyphicon {
     text-decoration: none;
+}
+.rwd-divtable input[type="radio"],
+.rwd-divtable input[type="checkbox"],
+.divtable input[type="radio"],
+.divtable input[type="checkbox"],
+table input[type="radio"],
+table input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    margin:0;
+}
+.pagination>li>a, .pagination>li>span{
+    border: 0;
+    color: #266BB9;
+}
+.toolbar .inline-block,
+.toolbar .center-block{
+    vertical-align: middle;
 }
