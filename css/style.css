@@ -637,7 +637,60 @@ a.color-2:active {
 .width-full {
     width: 100%;
 }
+/*頁籤*/
+.sideTab{
+    background: #ffffff;
+    padding: 0;
+}
+.sideTab .nav-pills>li>a {
+    font-size: 16px;
+    color: #4A4A4A;
+    font-weight: bold;
+}
+.sideTab .nav-pills>li.active>a,.sideTab .nav-pills>li.active>a:hover,.sideTab .nav-pills>li.active>a:focus {
+    color: #111F72;
+    background-color: #ffffff;
+    font-size: 18px;
+}
+.sideTab .nav-pills{
+    background: #F5F6F7;
+}
 
+.sideTab .title{
+background: #266BB9;
+box-shadow: 2px 2px 4px 0 rgba(17,31,114,0.50);
+padding: 10px 15px;
+}
+.sideTab .title [class^="h"]{
+    font-weight: bold;
+    color: #ffffff;
+}
+.sideTab .main{
+    padding: 15px;
+}
+.sideTab .title-article{
+    padding: 10px 15px;
+}
+/*list-style樣式*/
+.custom-liststyle {
+  padding-left: 40px;
+  margin-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+}
+.custom-liststyle li {
+  counter-increment: li-counter;
+}
+.custom-liststyle li::before {
+  content: counter(li-counter);
+  font-size: 20px;
+  color: #4A4A4A;
+  font-weight: bold;
+  position: absolute;
+  left: -5px;
+  width: 40px;
+  text-align: right;
+}
 /*表格*/
 .border-table .tr .td{
     border-bottom:1px solid #fff; 
