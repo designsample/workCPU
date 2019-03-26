@@ -475,6 +475,9 @@ a.color-2:active {
     background-color:#266BB9;
     color: #fff;
 }
+.btn-blue:active{
+    background-color: #286090;
+}
 /*[設定]功能----------*/
 
 .inline-block {
